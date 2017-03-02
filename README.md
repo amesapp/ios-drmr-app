@@ -1,2 +1,5 @@
-# ios-ames-app
-iOS Capstone Project for CodePath University - Ames Dating App
+# ios-capstone - App Name - ***AMES***
+Capstone Project for CodePath University
+
+##Short Description:
+  Mobile dating app based around astrological compatibility

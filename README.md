@@ -25,6 +25,11 @@ The following **optional** features are implemented:
 - [ ] User can share dreams with other DRMR users
 - [ ] User can dictate dream via microphone (Speech to Text API)
 
+## Wireframes
+
+![Wireframes 1](wireframes-01.jpg)
+![Wireframes 2](wireframes-01.jpg)
+
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:

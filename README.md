@@ -1,6 +1,6 @@
-# Project 4 - *Ames*
+# Capstone Project - *DRMR*
 
-**Ames** is a mobile dating app based on astrological compatibility.
+**DRMR** is a mobile journal that will let you easily store and read dreams you've had.
 
 Time spent: **X** hours spent in total
 
@@ -8,17 +8,22 @@ Time spent: **X** hours spent in total
 
 The following **required** functionality is completed:
 
-- [ ] User can sign in with Facebook using OAuth login flow
-- [ ] User can set criteria for who they want to be matched with
-- [ ] User can swipe on cards to like/dislike other users
-- [ ] User can edit their basic information through their profile screen
-- [ ] User can view astrological compatibility index of potential matches
-- [ ] User can chat with matched users
+- [ ] User can create a dream by filling a text form when they open the app
+- [ ] User can record dreams via voice clips, instead of text
+- [ ] User can save metadata about dreams like title (optional) and date (required) 
+- [ ] User can favorite and unfavorite dreams
+- [ ] User can categorize dream by emotion / emoji selector
+- [ ] User can search dreams via title, or body text info
+- [ ] User can share dream via iOS Share Utility
+
 
 The following **optional** features are implemented:
 
-- [ ] User can see matches near current location
-- [ ] User can unmatch other users
+- [ ] User can read astrological stats for the given date of dream
+- [ ] User can read meanings for keywords in dreams via Machine Learning algorithm
+- [ ] User can sync dreams online to keep backed up
+- [ ] User can share dreams with other DRMR users
+- [ ] User can dictate dream via microphone (Speech to Text API)
 
 ## Video Walkthrough
 

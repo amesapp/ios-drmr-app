@@ -2,7 +2,7 @@
 
 **DRMR** is a mobile journal that will let you easily store and read dreams you've had.
 
-Time spent: **X** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
@@ -10,7 +10,7 @@ The following **required** functionality is completed:
 
 - [ ] User can create a dream by filling a text form when they open the app
 - [ ] User can record dreams via voice clips, instead of text
-- [ ] User can save metadata about dreams like title (optional) and date (required) 
+- [ ] User can save metadata about dreams like title (optional) and date (required)
 - [ ] User can favorite and unfavorite dreams
 - [ ] User can categorize dream by emotion / emoji selector
 - [ ] User can search dreams via title, or body text info

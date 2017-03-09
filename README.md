@@ -25,13 +25,10 @@ The following **optional** features are implemented:
 - [ ] User can share dreams with other DRMR users
 - [ ] User can dictate dream via microphone (Speech to Text API)
 
-## Video Walkthrough
+## Wireframes
 
-Here's a walkthrough of implemented user stories:
-
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+![Wireframes 1](https://github.com/amesapp/ios-ames-app/blob/master/wireframes-01.JPG?raw=true)
+![Wireframes 2](https://github.com/amesapp/ios-ames-app/blob/master/wireframes-02.JPG?raw=true)
 
 ## Notes
 

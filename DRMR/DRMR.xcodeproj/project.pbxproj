@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		546842211E79FA28008DE8D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546842201E79FA28008DE8D3 /* AppDelegate.swift */; };
+		546842261E79FA28008DE8D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546842241E79FA28008DE8D3 /* Main.storyboard */; };
+		546842281E79FA28008DE8D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 546842271E79FA28008DE8D3 /* Assets.xcassets */; };
+		5468422B1E79FA28008DE8D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546842291E79FA28008DE8D3 /* LaunchScreen.storyboard */; };
+		546842361E7A006E008DE8D3 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546842351E7A006E008DE8D3 /* LogInViewController.swift */; };
+		546842381E7A0100008DE8D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546842371E7A0100008DE8D3 /* HomeViewController.swift */; };
+		6DF7E6628D4D8C120F15570F /* Pods_DRMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EF117DEB7B898C5EAD761B /* Pods_DRMR.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5468421D1E79FA28008DE8D3 /* DRMR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRMR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		546842201E79FA28008DE8D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		546842251E79FA28008DE8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		546842271E79FA28008DE8D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5468422A1E79FA28008DE8D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5468422C1E79FA28008DE8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		546842351E7A006E008DE8D3 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		546842371E7A0100008DE8D3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BDBDAAD474A371C2034D128B /* Pods-DRMR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRMR.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRMR/Pods-DRMR.release.xcconfig"; sourceTree = "<group>"; };
+		D8EF117DEB7B898C5EAD761B /* Pods_DRMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4010A4540FD35C7D370B7DC /* Pods-DRMR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRMR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRMR/Pods-DRMR.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5468421A1E79FA28008DE8D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DF7E6628D4D8C120F15570F /* Pods_DRMR.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		546842141E79FA28008DE8D3 = {
+			isa = PBXGroup;
+			children = (
+				5468421F1E79FA28008DE8D3 /* DRMR */,
+				5468421E1E79FA28008DE8D3 /* Products */,
+				B6F7AED52F0A89E227046511 /* Pods */,
+				B60B03DE2E768DDC37C9F838 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5468421E1E79FA28008DE8D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5468421D1E79FA28008DE8D3 /* DRMR.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5468421F1E79FA28008DE8D3 /* DRMR */ = {
+			isa = PBXGroup;
+			children = (
+				546842201E79FA28008DE8D3 /* AppDelegate.swift */,
+				546842321E79FFE6008DE8D3 /* View Controllers */,
+				546842331E79FFF4008DE8D3 /* Models */,
+				546842241E79FA28008DE8D3 /* Main.storyboard */,
+				546842271E79FA28008DE8D3 /* Assets.xcassets */,
+				546842291E79FA28008DE8D3 /* LaunchScreen.storyboard */,
+				5468422C1E79FA28008DE8D3 /* Info.plist */,
+			);
+			path = DRMR;
+			sourceTree = "<group>";
+		};
+		546842321E79FFE6008DE8D3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				546842371E7A0100008DE8D3 /* HomeViewController.swift */,
+				546842351E7A006E008DE8D3 /* LogInViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		546842331E79FFF4008DE8D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		B60B03DE2E768DDC37C9F838 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8EF117DEB7B898C5EAD761B /* Pods_DRMR.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6F7AED52F0A89E227046511 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4010A4540FD35C7D370B7DC /* Pods-DRMR.debug.xcconfig */,
+				BDBDAAD474A371C2034D128B /* Pods-DRMR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5468421C1E79FA28008DE8D3 /* DRMR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5468422F1E79FA28008DE8D3 /* Build configuration list for PBXNativeTarget "DRMR" */;
+			buildPhases = (
+				208E92E484B04FDBB9F51F54 /* [CP] Check Pods Manifest.lock */,
+				546842191E79FA28008DE8D3 /* Sources */,
+				5468421A1E79FA28008DE8D3 /* Frameworks */,
+				5468421B1E79FA28008DE8D3 /* Resources */,
+				072A2FB476B01310010ED5F5 /* [CP] Embed Pods Frameworks */,
+				42FCDE70C08AB6AC1B16ACFF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DRMR;
+			productName = DRMR;
+			productReference = 5468421D1E79FA28008DE8D3 /* DRMR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		546842151E79FA28008DE8D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Akbar Mirza";
+				TargetAttributes = {
+					5468421C1E79FA28008DE8D3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 29HC3KS7ZA;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 546842181E79FA28008DE8D3 /* Build configuration list for PBXProject "DRMR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 546842141E79FA28008DE8D3;
+			productRefGroup = 5468421E1E79FA28008DE8D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5468421C1E79FA28008DE8D3 /* DRMR */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5468421B1E79FA28008DE8D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5468422B1E79FA28008DE8D3 /* LaunchScreen.storyboard in Resources */,
+				546842281E79FA28008DE8D3 /* Assets.xcassets in Resources */,
+				546842261E79FA28008DE8D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		072A2FB476B01310010ED5F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRMR/Pods-DRMR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		208E92E484B04FDBB9F51F54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42FCDE70C08AB6AC1B16ACFF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRMR/Pods-DRMR-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		546842191E79FA28008DE8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				546842361E7A006E008DE8D3 /* LogInViewController.swift in Sources */,
+				546842211E79FA28008DE8D3 /* AppDelegate.swift in Sources */,
+				546842381E7A0100008DE8D3 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		546842241E79FA28008DE8D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				546842251E79FA28008DE8D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		546842291E79FA28008DE8D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5468422A1E79FA28008DE8D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5468422D1E79FA28008DE8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5468422E1E79FA28008DE8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		546842301E79FA28008DE8D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4010A4540FD35C7D370B7DC /* Pods-DRMR.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29HC3KS7ZA;
+				INFOPLIST_FILE = DRMR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbar.DRMR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		546842311E79FA28008DE8D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDBDAAD474A371C2034D128B /* Pods-DRMR.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 29HC3KS7ZA;
+				INFOPLIST_FILE = DRMR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.akbar.DRMR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		546842181E79FA28008DE8D3 /* Build configuration list for PBXProject "DRMR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5468422D1E79FA28008DE8D3 /* Debug */,
+				5468422E1E79FA28008DE8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5468422F1E79FA28008DE8D3 /* Build configuration list for PBXNativeTarget "DRMR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				546842301E79FA28008DE8D3 /* Debug */,
+				546842311E79FA28008DE8D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 546842151E79FA28008DE8D3 /* Project object */;
+}

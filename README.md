@@ -41,25 +41,30 @@ Describe any challenges encountered while building the app.
 | ID   | NAME    | LAST_NAME  | USERNAME |    PASSWORD    |
 | :--: | :------:| :--------: | :-------:| :------------: |
 | INT  | VARCHAR | VARCHAR    | VARCHAR  |    VARCHAR     |
-
+| .    | .       | .          | .        |    .           |
+| .    | .       | .          | .        |    .           |
 
 ### DREAM TABLE
 
 | ID    |   USER_ID | TITLE      | CREATED_AT | DESCRIPTION  | IS_FAVORITED |  EMOTION |
 | :---: | :--------:| :--------: | :---------:| :----------: | :----------: | :-------:|
-| INT   |     FK    | VARCHAR    |  TIMESTAMP |   TEXTFIELD  | BOOL         | VARCHAR  |
+| .     |     .     | .          |  .         |   .          |  .           |  .       |
+| .     |     .     | .          |  .         |   .          |  .           |  .       |
+
 
 ### COMMENTS
 
 | ID    | CREATED_AT  | USER_ID | DREAM_ID   | description  |
 | :---: | :----------:| :-----: | :---------:| :----------: |
 | INT   | TIMESTAMP   | FK      |  FK        |  TEXTFIELD   |
+| .     | .           | .       |  .         |  .           |
+| .     | .           | .       |  .         |  .           |
 
 ### COMMENTS
 
 | ID    | USER_ID | DREAM_ID   |
 | :---: | :-----: | :---------:|
-| INT   | FK      |  FK        |
+| .     | .       |  .         |
 
 
 

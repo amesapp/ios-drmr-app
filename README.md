@@ -46,11 +46,11 @@ Describe any challenges encountered while building the app.
 
 ### DREAM TABLE
 
-| ID    |   USER_ID | TITLE      | CREATED_AT | DESCRIPTION  | IS_FAVORITED |  EMOTION |
+| ID    |  USER_ID  | TITLE      | CREATED_AT | DESCRIPTION  | IS_FAVORITED |  EMOTION |
 | :---: | :--------:| :--------: | :---------:| :----------: | :----------: | :-------:|
+| INT   |    FK     | VARCHAR    |  TIMESTAMP | TEXTFIELD    |  BOOL        |  VARCHAR |
 | .     |     .     | .          |  .         |   .          |  .           |  .       |
 | .     |     .     | .          |  .         |   .          |  .           |  .       |
-
 
 ### COMMENTS
 

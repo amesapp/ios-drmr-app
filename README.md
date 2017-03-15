@@ -2,7 +2,7 @@
 
 **DRMR** is a mobile journal that will let you easily store and read dreams you've had.
 
-Time spent: **2** hours spent in total
+Time spent: **5** hours spent in total
 
 ## User Stories
 
@@ -33,6 +33,35 @@ The following **optional** features are implemented:
 ## Notes
 
 Describe any challenges encountered while building the app.
+
+## Defining Tables and Columns
+
+
+### USER TABLE
+| ID   | NAME    | LAST_NAME  | USERNAME |    PASSWORD    |
+| :--: | :------:| :--------: | :-------:| :------------: |
+| INT  | VARCHAR | VARCHAR    | VARCHAR  |    VARCHAR     |
+
+
+### DREAM TABLE
+
+| ID    |   USER_ID | TITLE      | CREATED_AT | DESCRIPTION  | IS_FAVORITED |  EMOTION |
+| :---: | :--------:| :--------: | :---------:| :----------: | :----------: | :-------:|
+| INT   |     FK    | VARCHAR    |  TIMESTAMP |   TEXTFIELD  | BOOL         | VARCHAR  |
+
+### COMMENTS
+
+| ID    | CREATED_AT  | USER_ID | DREAM_ID   | description  |
+| :---: | :----------:| :-----: | :---------:| :----------: |
+| INT   | TIMESTAMP   | FK      |  FK        |  TEXTFIELD   |
+
+### COMMENTS
+
+| ID    | USER_ID | DREAM_ID   |
+| :---: | :-----: | :---------:|
+| INT   | FK      |  FK        |
+
+
 
 ## License
 

@@ -14,6 +14,7 @@ class HomeViewController: UIViewController {
     // =========================================================================
     // Outlets
     // =========================================================================
+    @IBOutlet weak var tableView: UITableView!
     
     // =========================================================================
     // Properties
@@ -23,6 +24,10 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // set tableview delegate and datasource
+        tableView.delegate = self
+        tableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -70,4 +75,32 @@ class HomeViewController: UIViewController {
     // Other Methods
     // =========================================================================
 
+}
+
+// =============================================================================
+// Extensions
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// Table View Delegate
+// -----------------------------------------------------------------------------
+extension HomeViewController: UITableViewDelegate {
+    
+}
+
+// -----------------------------------------------------------------------------
+// Table View Data Source
+// -----------------------------------------------------------------------------
+extension HomeViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DreamCell", for: indexPath)
+        
+        return cell
+    }
+    
 }

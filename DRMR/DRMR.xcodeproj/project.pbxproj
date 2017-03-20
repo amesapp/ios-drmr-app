@@ -13,6 +13,7 @@
 		5468422B1E79FA28008DE8D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546842291E79FA28008DE8D3 /* LaunchScreen.storyboard */; };
 		546842361E7A006E008DE8D3 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546842351E7A006E008DE8D3 /* LogInViewController.swift */; };
 		546842381E7A0100008DE8D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546842371E7A0100008DE8D3 /* HomeViewController.swift */; };
+		547889B21E8099B600BA0AD2 /* DreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547889B11E8099B600BA0AD2 /* DreamCell.swift */; };
 		6DF7E6628D4D8C120F15570F /* Pods_DRMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EF117DEB7B898C5EAD761B /* Pods_DRMR.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		5468422C1E79FA28008DE8D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		546842351E7A006E008DE8D3 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		546842371E7A0100008DE8D3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		547889B11E8099B600BA0AD2 /* DreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamCell.swift; sourceTree = "<group>"; };
 		BDBDAAD474A371C2034D128B /* Pods-DRMR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRMR.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRMR/Pods-DRMR.release.xcconfig"; sourceTree = "<group>"; };
 		D8EF117DEB7B898C5EAD761B /* Pods_DRMR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRMR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4010A4540FD35C7D370B7DC /* Pods-DRMR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRMR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRMR/Pods-DRMR.debug.xcconfig"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				546842321E79FFE6008DE8D3 /* View Controllers */,
 				546842331E79FFF4008DE8D3 /* Models */,
 				546842241E79FA28008DE8D3 /* Main.storyboard */,
+				547889B11E8099B600BA0AD2 /* DreamCell.swift */,
 				546842271E79FA28008DE8D3 /* Assets.xcassets */,
 				546842291E79FA28008DE8D3 /* LaunchScreen.storyboard */,
 				5468422C1E79FA28008DE8D3 /* Info.plist */,
@@ -234,6 +237,7 @@
 				546842361E7A006E008DE8D3 /* LogInViewController.swift in Sources */,
 				546842211E79FA28008DE8D3 /* AppDelegate.swift in Sources */,
 				546842381E7A0100008DE8D3 /* HomeViewController.swift in Sources */,
+				547889B21E8099B600BA0AD2 /* DreamCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,8 @@ import Parse
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var storyboard: UIStoryboard?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -29,7 +30,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 
         }))
         
-        return true
+        self.storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let currentuser = PFUser.current()
+        
+        if let currentuser = currentuser{
+            print (currentuser)
+        }
+        
+        if currentuser != nil{
+            self.window?.rootViewController = storyboard?.instantiateViewController(withIdentifier: "isLoggedIn")
+            print("SUCCESS: made it to Home screen")
+            return true
+        }
+        else{
+            self.window?.rootViewController = storyboard?.instantiateViewController(withIdentifier: "LogInScreen")
+            
+            return true
+        }
+        
+        
         
     }
 

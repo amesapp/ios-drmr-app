@@ -14,7 +14,7 @@ class Dream: NSObject {
     // =========================================================================
     // Properties
     // =========================================================================
-    let id: Int
+    // let id: Int
     // let userID: Int?
     let createdAt: Date
     var title: String
@@ -25,19 +25,19 @@ class Dream: NSObject {
     // =========================================================================
     // Static Properties
     // =========================================================================
-    static var currentID: Int = 0
+    // static var currentID: Int = 0
     
     // =========================================================================
     // Constructor
     // =========================================================================
-    init(withContent content: String, title: String?) {
+    init(withContent content: String, title: String?, createdAt: Date) {
         
         // set the dream id
-        self.id = Dream.currentID
-        Dream.currentID += 1
+        // self.id = Dream.currentID
+        // Dream.currentID += 1
         
         // set the dream's date
-        self.createdAt = Date()
+        self.createdAt = createdAt
         
         // set the title if there is one
         self.title = title ?? ""
@@ -67,7 +67,7 @@ class Dream: NSObject {
         let parseDream = PFObject(className: "Dream")
         
         // add relevant fields to the object
-        parseDream["id"] = dream.id
+        // parseDream["id"] = dream.id
         parseDream["createdAt"] = dream.createdAt
         parseDream["title"] = dream.title
         parseDream["content"] = dream.content

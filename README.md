@@ -2,7 +2,7 @@
 
 **DRMR** is a mobile journal that will let you easily store and read dreams you've had.
 
-Time spent: **5** hours spent in total
+Time spent: **16** hours spent in total
 
 ## User Stories
 

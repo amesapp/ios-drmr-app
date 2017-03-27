@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class AddDreamViewController: UIViewController {
 
@@ -20,12 +21,19 @@ class AddDreamViewController: UIViewController {
     
     @IBOutlet weak var dateButton: UIButton!
     
+    // =========================================================================
+    // Properties
+    // =========================================================================
+    
+    var dreamDate: Date?
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
-        titleLabel.text = "NO TITLE"
-        setDefaultDate()
+        if dreamDate == nil {
+            setDefaultDate()
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -36,19 +44,55 @@ class AddDreamViewController: UIViewController {
     }
 
     func setDefaultDate(){
-        let now = Date()
+        dreamDate = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        dateButton.setTitle("\(dateFormatter.string(from: now))", for: .normal)
-        print("\(dateFormatter.string(from: now))")
-    
+
+        dateButton.setTitle("\(dateFormatter.string(from: dreamDate!))", for: .normal)
+        print("\(dateFormatter.string(from: dreamDate!))")
+        
     }
     
     @IBAction func onTapDateButton(_ sender: Any) {
         
+    }
+    
+    // =========================================================================
+    // ACTIONS
+    // =========================================================================
+    
+    @IBAction func onCancelButton(_ sender: UIBarButtonItem) {
+        
+        // if user presses on cancel button, ignore all information
+        // dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
         
     }
     
+    @IBAction func onSaveButton(_ sender: UIBarButtonItem) {
+        
+        // if the user presses on the save button, create a new dream object
+        if let content = bodyLabel.text {
+            let myDream = Dream(withContent: content, title: titleLabel.text, createdAt: dreamDate!)
+            
+            // save the dream to our dreams list
+            // delegate?.didCreateDream(dream: myDream)
+            
+            Dream.postUserDream(myDream, withCompletion: { (success: Bool, error: Error?) in
+                
+                if success {
+                    print("SUCCESS: Dream was Posted!")
+                } else {
+                    print(error!.localizedDescription)
+                }
+                
+            })
+            
+            // once dream is saved, dismiss the current view controller
+            self.navigationController?.popViewController(animated: true)
+        }
+        
+    }
     
     
     /*

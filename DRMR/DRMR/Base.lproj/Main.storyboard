@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -91,7 +91,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Whj-ha-aAH" id="OFu-yH-urx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -120,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="1836" y="123.68815592203899"/>
         </scene>
-        <!--Add Dream View Controller-->
+        <!--Add Dream-->
         <scene sceneID="67j-EC-uM1">
             <objects>
                 <viewController id="6d0-ru-nHl" customClass="AddDreamViewController" customModule="DRMR" customModuleProvider="target" sceneMemberID="viewController">
@@ -166,6 +166,10 @@
                             <constraint firstItem="WLs-1J-UuG" firstAttribute="leading" secondItem="uFI-zT-FCW" secondAttribute="leading" constant="16" id="xeo-3M-zsL"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Add Dream" id="Ns9-CM-2Tg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UJB-p9-yZr"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="o5k-67-ogw"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="bodyLabel" destination="8YI-Kr-jOr" id="ge1-F1-M2v"/>
                         <outlet property="dateLabel" destination="WLs-1J-UuG" id="hks-1O-FPg"/>

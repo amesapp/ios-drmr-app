@@ -16,10 +16,9 @@ class AddDreamViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UITextField!
     
-    @IBOutlet weak var dateLabel: UITextField!
-    
     @IBOutlet weak var bodyLabel: UITextView!
     
+    @IBOutlet weak var dateButton: UIButton!
     
     override func viewDidLoad() {
         
@@ -35,15 +34,21 @@ class AddDreamViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     func setDefaultDate(){
         let now = Date()
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        dateLabel.text = "\(dateFormatter.string(from: now))"
+        dateButton.setTitle("\(dateFormatter.string(from: now))", for: .normal)
         print("\(dateFormatter.string(from: now))")
+    
     }
+    
+    @IBAction func onTapDateButton(_ sender: Any) {
+        
+        
+    }
+    
     
     
     /*

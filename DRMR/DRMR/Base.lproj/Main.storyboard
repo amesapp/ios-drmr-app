@@ -167,8 +167,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Dream" id="Ns9-CM-2Tg">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UJB-p9-yZr"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="o5k-67-ogw"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UJB-p9-yZr">
+                            <connections>
+                                <action selector="onCancelButton:" destination="6d0-ru-nHl" id="lIq-HC-dub"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="o5k-67-ogw">
+                            <connections>
+                                <action selector="onSaveButton:" destination="6d0-ru-nHl" id="kgt-Ii-M46"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="bodyLabel" destination="8YI-Kr-jOr" id="ge1-F1-M2v"/>

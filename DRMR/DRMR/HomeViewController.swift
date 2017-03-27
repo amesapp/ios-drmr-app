@@ -13,15 +13,6 @@ import Parse
 // Protocols
 // =============================================================================
 
-// -----------------------------------------------------------------------------
-// Dream Editor Delegate Protocol
-// -----------------------------------------------------------------------------
-protocol DreamEditorDelegate: class {
-    
-    func didCreateDream(dream: Dream)
-    
-}
-
 
 // =============================================================================
 // View Controller
@@ -36,7 +27,7 @@ class HomeViewController: UIViewController {
     // =========================================================================
     // Properties
     // =========================================================================
-    var dreams = [Dream]()
+    // var dreams = [Dream]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +58,7 @@ class HomeViewController: UIViewController {
     // =========================================================================
     // Actions
     // =========================================================================
+    
     @IBAction func onSignOut(_ sender: UIBarButtonItem) {
         
         let username = PFUser.current()?.username
@@ -85,10 +77,6 @@ class HomeViewController: UIViewController {
         }
         
     }
-    
-    
-    
-    
     
     // =========================================================================
     // Other Methods
@@ -113,33 +101,13 @@ extension HomeViewController: UITableViewDelegate {
 extension HomeViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dreams.count
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DreamCell", for: indexPath)
         
-        let contentLabel = UILabel(frame: CGRect(x: 0, y: 0, width: cell.frame.width, height: cell.frame.height))
-        
-        let dream = dreams[indexPath.row]
-        
-        contentLabel.text = dream.content
-        
         return cell
     }
-    
-}
-
-extension HomeViewController: DreamEditorDelegate {
-    
-    internal func didCreateDream(dream: Dream) {
-        
-        // add our newly created dream to dreams
-        dreams.append(dream)
-        
-        // reload our tableView
-        tableView.reloadData()
-    }
-
     
 }

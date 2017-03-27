@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class AddDreamViewController: UIViewController {
 
@@ -23,17 +24,12 @@ class AddDreamViewController: UIViewController {
     // =========================================================================
     // Properties
     // =========================================================================
-    weak var delegate: DreamEditorDelegate?
     
     var dreamDate: Date?
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        // titleLabel.text = "NO TITLE"
-        
-        self.delegate = parent as? DreamEditorDelegate
         
         if dreamDate == nil {
             setDefaultDate()
@@ -64,8 +60,7 @@ class AddDreamViewController: UIViewController {
         
         // if user presses on cancel button, ignore all information
         // dismiss(animated: true, completion: nil)
-        
-        self.navigationController?.dismiss(animated: true, completion: nil)
+        self.navigationController?.popViewController(animated: true)
         
     }
     
@@ -76,11 +71,20 @@ class AddDreamViewController: UIViewController {
             let myDream = Dream(withContent: content, title: titleLabel.text, createdAt: dreamDate!)
             
             // save the dream to our dreams list
-            delegate?.didCreateDream(dream: myDream)
+            // delegate?.didCreateDream(dream: myDream)
+            
+            Dream.postUserDream(myDream, withCompletion: { (success: Bool, error: Error?) in
+                
+                if success {
+                    print("SUCCESS: Dream was Posted!")
+                } else {
+                    print(error!.localizedDescription)
+                }
+                
+            })
             
             // once dream is saved, dismiss the current view controller
-            self.navigationController?.dismiss(animated: true, completion: nil)
-            
+            self.navigationController?.popViewController(animated: true)
         }
         
     }

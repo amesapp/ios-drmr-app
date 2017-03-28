@@ -186,7 +186,7 @@
             </objects>
             <point key="canvasLocation" x="1836" y="123.68815592203899"/>
         </scene>
-        <!--Add Dream View Controller-->
+        <!--Add Dream-->
         <scene sceneID="67j-EC-uM1">
             <objects>
                 <viewController id="6d0-ru-nHl" customClass="AddDreamViewController" customModule="DRMR" customModuleProvider="target" sceneMemberID="viewController">
@@ -204,12 +204,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLs-1J-UuG">
-                                <rect key="frame" x="16" y="109" width="343" height="24"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8YI-Kr-jOr">
                                 <rect key="frame" x="8" y="149" width="359" height="502"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,30 +211,81 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXZ-io-yil">
+                                <rect key="frame" x="16" y="109" width="123" height="30"/>
+                                <state key="normal" title="date">
+                                    <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="onTapDateButton:" destination="6d0-ru-nHl" eventType="touchUpInside" id="WKa-av-mDK"/>
+                                    <segue destination="Mqq-Td-Rr6" kind="popoverPresentation" popoverAnchorView="GXZ-io-yil" id="zwO-Ne-fiP">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="GXZ-io-yil" firstAttribute="top" secondItem="SCx-Wl-8UV" secondAttribute="bottom" constant="8" id="9kH-nS-gdu"/>
                             <constraint firstItem="8YI-Kr-jOr" firstAttribute="leading" secondItem="uFI-zT-FCW" secondAttribute="leading" constant="8" id="DyZ-oy-Lvb"/>
                             <constraint firstAttribute="trailing" secondItem="SCx-Wl-8UV" secondAttribute="trailing" constant="16" id="Gfw-Sh-ecf"/>
                             <constraint firstItem="EUy-8j-PJs" firstAttribute="top" secondItem="8YI-Kr-jOr" secondAttribute="bottom" constant="16" id="JAW-Ql-Opl"/>
                             <constraint firstAttribute="trailing" secondItem="8YI-Kr-jOr" secondAttribute="trailing" constant="8" id="JRj-d6-Ol7"/>
+                            <constraint firstItem="GXZ-io-yil" firstAttribute="leading" secondItem="uFI-zT-FCW" secondAttribute="leading" constant="16" id="QaJ-qM-ttI"/>
                             <constraint firstItem="SCx-Wl-8UV" firstAttribute="top" secondItem="Jwf-wX-dT8" secondAttribute="bottom" constant="8" id="Udj-So-fpS"/>
+                            <constraint firstItem="8YI-Kr-jOr" firstAttribute="top" secondItem="GXZ-io-yil" secondAttribute="bottom" constant="10" id="Uyc-BE-Wvf"/>
                             <constraint firstItem="SCx-Wl-8UV" firstAttribute="leading" secondItem="uFI-zT-FCW" secondAttribute="leading" constant="16" id="aLz-HO-BCs"/>
-                            <constraint firstAttribute="trailing" secondItem="WLs-1J-UuG" secondAttribute="trailing" constant="16" id="b9i-sn-yiX"/>
-                            <constraint firstItem="8YI-Kr-jOr" firstAttribute="top" secondItem="WLs-1J-UuG" secondAttribute="bottom" constant="16" id="fl8-um-Nsn"/>
-                            <constraint firstItem="WLs-1J-UuG" firstAttribute="top" secondItem="SCx-Wl-8UV" secondAttribute="bottom" constant="8" id="saR-tu-MF9"/>
-                            <constraint firstItem="WLs-1J-UuG" firstAttribute="leading" secondItem="uFI-zT-FCW" secondAttribute="leading" constant="16" id="xeo-3M-zsL"/>
+                            <constraint firstAttribute="trailing" secondItem="GXZ-io-yil" secondAttribute="trailing" constant="236" id="qP4-Fd-6at"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Add Dream" id="Ns9-CM-2Tg">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="UJB-p9-yZr">
+                            <connections>
+                                <action selector="onCancelButton:" destination="6d0-ru-nHl" id="lIq-HC-dub"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="o5k-67-ogw">
+                            <connections>
+                                <action selector="onSaveButton:" destination="6d0-ru-nHl" id="kgt-Ii-M46"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="bodyLabel" destination="8YI-Kr-jOr" id="ge1-F1-M2v"/>
-                        <outlet property="dateLabel" destination="WLs-1J-UuG" id="hks-1O-FPg"/>
+                        <outlet property="dateButton" destination="GXZ-io-yil" id="8Pv-c2-C32"/>
                         <outlet property="titleLabel" destination="SCx-Wl-8UV" id="CGZ-4p-Rfy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UXM-Mn-o80" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2857" y="124"/>
+            <point key="canvasLocation" x="2856.8000000000002" y="123.68815592203899"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gif-xj-3Xh">
+            <objects>
+                <viewController id="Mqq-Td-Rr6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ac7-Gq-MdO"/>
+                        <viewControllerLayoutGuide type="bottom" id="85v-0e-zwf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ekm-Eg-cO9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-Qc-rk0">
+                                <rect key="frame" x="16" y="225" width="343" height="169"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="512348293.63628203">
+                                    <!--2017-03-27 22:58:13 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GZe-mu-Oad" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3584.8000000000002" y="445.72713643178412"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wjM-Sa-zM6">

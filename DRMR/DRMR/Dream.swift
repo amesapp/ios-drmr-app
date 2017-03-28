@@ -73,6 +73,7 @@ class Dream: NSObject {
         parseDream["content"] = dream.content
         parseDream["preview"] = dream.preview
         parseDream["isFavorited"] = dream.isFavorited
+        parseDream["author"] = PFUser.current()
         
         // save object (following function will save the object in Parse asynchronously)
         parseDream.saveInBackground(block: completion)

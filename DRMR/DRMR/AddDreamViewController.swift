@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class AddDreamViewController: UIViewController {
+class AddDreamViewController: UIViewController, DateSentDelegate {
 
     // =========================================================================
     // Outlets
@@ -28,7 +28,6 @@ class AddDreamViewController: UIViewController {
     var dreamDate: Date?
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         
         if dreamDate == nil {
@@ -44,7 +43,11 @@ class AddDreamViewController: UIViewController {
     }
 
     func setDefaultDate(){
-        dreamDate = Date()
+        
+        if dreamDate == nil{
+            dreamDate = Date()
+        }
+        
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
@@ -57,12 +60,6 @@ class AddDreamViewController: UIViewController {
     // =========================================================================
     // ACTIONS
     // =========================================================================
-    
-    @IBAction func onTapDateButton(_ sender: Any) {
-        
-        
-    }
-    
 
     
     @IBAction func onCancelButton(_ sender: UIBarButtonItem) {
@@ -98,15 +95,29 @@ class AddDreamViewController: UIViewController {
         
     }
     
+    // =========================================================================
+    // DELEGATE
+    // =========================================================================
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func userDidEnterDate(data: Date){
+        self.dreamDate = data
+        self.setDefaultDate()
+        print("Dream Date Changed!")
     }
-    */
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("\(segue.identifier!)")
+    
+        let vc = segue.destination as! DatePickerViewController
+        vc.delegate = self
+        
+    }
+
 
 }
+
+
+
+

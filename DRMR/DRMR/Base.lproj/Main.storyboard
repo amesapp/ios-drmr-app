@@ -152,8 +152,11 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="onTapDateButton:" destination="6d0-ru-nHl" eventType="touchUpInside" id="WKa-av-mDK"/>
-                                    <segue destination="Mqq-Td-Rr6" kind="presentation" id="zwO-Ne-fiP"/>
+                                    <segue destination="Mqq-Td-Rr6" kind="presentation" id="zwO-Ne-fiP">
+                                        <string key="identifier" base64-UTF8="YES">
+ZGF0ZVBpY2tlclNlZ3VlCA
+</string>
+                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -208,13 +211,13 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFn-ge-lOj">
                                 <rect key="frame" x="16" y="151" width="343" height="217"/>
                                 <subviews>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-Qc-rk0">
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Th8-Qc-rk0">
                                         <rect key="frame" x="0.0" y="1" width="343" height="170"/>
                                         <date key="date" timeIntervalSinceReferenceDate="512348293.63628203">
                                             <!--2017-03-27 22:58:13 +0000-->
                                         </date>
                                         <connections>
-                                            <action selector="pickerValueChanged:" destination="Mqq-Td-Rr6" eventType="valueChanged" id="6c8-F6-afj"/>
+                                            <action selector="selectingFromPicker:" destination="Mqq-Td-Rr6" eventType="valueChanged" id="eG4-Hx-oAi"/>
                                         </connections>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Vw-vR-vlV">
@@ -228,7 +231,7 @@
                                             <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <action selector="onTapDone:" destination="Mqq-Td-Rr6" eventType="touchUpInside" id="csf-KT-2sf"/>
+                                            <action selector="onTapDoneButton:" destination="Mqq-Td-Rr6" eventType="touchUpInside" id="fJo-7r-Uac"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -257,8 +260,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="dateSelected" destination="Th8-Qc-rk0" id="9Dz-ZQ-WQM"/>
                         <outlet property="popUpView" destination="jFn-ge-lOj" id="7z6-fZ-Ts2"/>
-                        <outlet property="selectDatePicker" destination="Th8-Qc-rk0" id="A8n-5W-sNw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZe-mu-Oad" userLabel="First Responder" sceneMemberID="firstResponder"/>

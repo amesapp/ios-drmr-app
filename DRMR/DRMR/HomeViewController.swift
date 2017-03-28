@@ -37,6 +37,25 @@ class HomeViewController: UIViewController {
         // set tableview delegate and datasource
         tableView.delegate = self
         tableView.dataSource = self
+        
+        Dream.loadUserDreams { (dreams: [PFObject]?, error: Error?) in
+            // if there is no error
+            if error == nil {
+                // the find succeeded
+                print("SUCCESS: Retreived \(dreams!.count) dreams.")
+                
+                // do something with the dreams
+                if let dreams = dreams {
+                    for dream in dreams {
+                        print("DREAM: \(dream["content"])")
+                        print("AUTHOR: \(dream["author"])")
+                    }
+                }
+            } else {
+                // log the details of the failure
+                print("ERROR: \(error?.localizedDescription)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -69,6 +88,7 @@ class HomeViewController: UIViewController {
             // PFUser.current() will now be nil
             print("SUCCESS: \(username!) Logged Out Succesfully!")
             
+            // TODO: fix so it dismisses view even when we started logging in
             // dismiss the current view
             self.dismiss(animated: true, completion: {
                 

@@ -78,4 +78,19 @@ class Dream: NSObject {
         // save object (following function will save the object in Parse asynchronously)
         parseDream.saveInBackground(block: completion)
     }
+    
+    class func loadUserDreams(withCompletion completion: @escaping ([PFObject]?, Error?) -> Void) {
+        
+        // construct query
+        let dreamQuery = PFQuery(className: "Dream")
+        // filter by the user
+        if let user = PFUser.current() {
+            // filter dreams by user name
+            dreamQuery.whereKey("author", equalTo: user)
+            
+            // find objects in background
+            dreamQuery.findObjectsInBackground(block: completion)
+        }
+        
+    }
 }

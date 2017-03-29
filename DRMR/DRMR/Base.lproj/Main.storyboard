@@ -86,7 +86,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r70-8m-d4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836" y="-583"/>
+            <point key="canvasLocation" x="2857" y="-680"/>
+        </scene>
+        <!--View Dream-->
+        <scene sceneID="fJ6-sz-ja7">
+            <objects>
+                <viewController title="View Dream" id="1c2-zm-zqB" customClass="ViewDreamViewController" customModule="DRMR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SmT-7f-oyS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bje-UR-ckT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jvJ-Hk-G5T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Dream" id="Oxn-sO-p9l">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="2I1-qM-NCh"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Jm0-Al-1c6">
+                            <connections>
+                                <segue destination="WKX-CZ-B1i" kind="show" identifier="editDreamSegue" id="6kp-4y-0vK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLd-UI-GCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="-679"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="1qe-80-7Rq">
@@ -159,14 +185,6 @@
                                                         <constraint firstAttribute="height" constant="44" id="no0-cd-clC"/>
                                                     </constraints>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJ6-aj-6eU">
-                                                    <rect key="frame" x="321" y="98" width="30" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Edit"/>
-                                                    <connections>
-                                                        <segue destination="WKX-CZ-B1i" kind="show" identifier="editDreamSegue" id="K0J-Lg-maQ"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Xpa-Ii-fO5" firstAttribute="top" secondItem="OFu-yH-urx" secondAttribute="top" constant="8" id="0gJ-F1-huU"/>
@@ -186,6 +204,9 @@
                                                 <constraint firstItem="GW9-Z4-BX4" firstAttribute="top" secondItem="Xpa-Ii-fO5" secondAttribute="bottom" constant="16" id="yEg-tB-nSk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="1c2-zm-zqB" kind="show" id="GJV-cu-chy"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

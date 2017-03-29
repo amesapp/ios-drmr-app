@@ -19,7 +19,8 @@ class Dream: NSObject {
     let createdAt: Date
     var title: String
     var content: String
-    var preview: String
+    
+    // var preview: String
     var isFavorited: Bool = false
     
     // =========================================================================
@@ -46,8 +47,8 @@ class Dream: NSObject {
         self.content = content
         
         // set the dreamPreview to be the first 140 chars of a dream
-        let index = content.index(content.startIndex, offsetBy: 140, limitedBy: content.endIndex)
-        self.preview = content.substring(to: index!)
+        // let index = content.index(content.startIndex, offsetBy: 140, limitedBy: content.endIndex)
+        // self.preview = content.substring(to: index!)
     }
     
     
@@ -71,7 +72,7 @@ class Dream: NSObject {
         parseDream["createdAt"] = dream.createdAt
         parseDream["title"] = dream.title
         parseDream["content"] = dream.content
-        parseDream["preview"] = dream.preview
+        // parseDream["preview"] = dream.preview
         parseDream["isFavorited"] = dream.isFavorited
         parseDream["author"] = PFUser.current()
         

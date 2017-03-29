@@ -10,6 +10,18 @@ import UIKit
 
 class DreamCell: UITableViewCell {
 
+    // =========================================================================
+    // Outlets
+    // =========================================================================
+    // Dream Labels
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var previewLabel: UILabel!
+    
+    // Mini Calendar Labels
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var monthLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

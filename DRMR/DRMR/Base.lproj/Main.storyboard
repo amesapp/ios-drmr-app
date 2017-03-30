@@ -70,6 +70,50 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
         </scene>
+        <!--Edit Dream View Controller-->
+        <scene sceneID="fB2-oz-Q1M">
+            <objects>
+                <viewController id="WKX-CZ-B1i" customClass="EditDreamViewController" customModule="DRMR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VUM-T8-VcL"/>
+                        <viewControllerLayoutGuide type="bottom" id="jib-2g-IpT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QXa-u3-aAr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r70-8m-d4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857" y="-680"/>
+        </scene>
+        <!--View Dream-->
+        <scene sceneID="fJ6-sz-ja7">
+            <objects>
+                <viewController title="View Dream" id="1c2-zm-zqB" customClass="ViewDreamViewController" customModule="DRMR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SmT-7f-oyS"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bje-UR-ckT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jvJ-Hk-G5T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="View Dream" id="Oxn-sO-p9l">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="2I1-qM-NCh"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Jm0-Al-1c6">
+                            <connections>
+                                <segue destination="WKX-CZ-B1i" kind="show" identifier="editDreamSegue" id="6kp-4y-0vK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nLd-UI-GCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="-679"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="1qe-80-7Rq">
             <objects>
@@ -91,7 +135,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Whj-ha-aAH" id="OFu-yH-urx">
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
+=======
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+>>>>>>> ea-dreamedit
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpa-Ii-fO5">
@@ -161,11 +209,15 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+<<<<<<< HEAD
                                             <outlet property="dateLabel" destination="vWF-2N-uQv" id="BvX-vz-cDv"/>
                                             <outlet property="dayLabel" destination="ahe-CF-ag9" id="PCO-E6-00W"/>
                                             <outlet property="monthLabel" destination="x3A-Pd-Fqm" id="mUa-Sk-sFR"/>
                                             <outlet property="previewLabel" destination="GW9-Z4-BX4" id="Pbe-4X-4sG"/>
                                             <outlet property="titleLabel" destination="Xpa-Ii-fO5" id="vea-0J-X8x"/>
+=======
+                                            <segue destination="1c2-zm-zqB" kind="show" id="GJV-cu-chy"/>
+>>>>>>> ea-dreamedit
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

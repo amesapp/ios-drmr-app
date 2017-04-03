@@ -135,11 +135,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Whj-ha-aAH" id="OFu-yH-urx">
-<<<<<<< HEAD
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
-=======
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
->>>>>>> ea-dreamedit
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpa-Ii-fO5">
@@ -209,15 +205,12 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-<<<<<<< HEAD
                                             <outlet property="dateLabel" destination="vWF-2N-uQv" id="BvX-vz-cDv"/>
                                             <outlet property="dayLabel" destination="ahe-CF-ag9" id="PCO-E6-00W"/>
                                             <outlet property="monthLabel" destination="x3A-Pd-Fqm" id="mUa-Sk-sFR"/>
                                             <outlet property="previewLabel" destination="GW9-Z4-BX4" id="Pbe-4X-4sG"/>
                                             <outlet property="titleLabel" destination="Xpa-Ii-fO5" id="vea-0J-X8x"/>
-=======
                                             <segue destination="1c2-zm-zqB" kind="show" id="GJV-cu-chy"/>
->>>>>>> ea-dreamedit
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

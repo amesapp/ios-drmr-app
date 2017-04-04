@@ -45,9 +45,9 @@ class ViewDreamViewController: UIViewController {
         self.dateLabel.text = dateFormatter.string(from: (dream?.createdAt)!)
         self.contentLabel.text = dream?.content
         
-        print("T: \(titleLabel.text)")
-        print("D: \(dateLabel.text)")
-        print("C: \(contentLabel.text)")
+        print("T: \(titleLabel.text!)")
+        print("D: \(dateLabel.text!)")
+        print("C: \(contentLabel.text!)")
     }
     
 

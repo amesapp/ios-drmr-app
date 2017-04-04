@@ -20,13 +20,8 @@ class ViewDreamViewController: UIViewController {
     
     @IBOutlet weak var contentLabel: UILabel!
     
-    // =========================================================================
-    // Variables
-    // =========================================================================
 
-    var title1: String?
-    var date1: String?
-    var content1: String?
+    var dream: Dream?
     
     
     override func viewDidLoad() {
@@ -43,13 +38,16 @@ class ViewDreamViewController: UIViewController {
     }
     
     func setOutlets(){
-        print("T: \(title1)")
-        print("D: \(date1)")
-        print("C: \(content1)")
         
-        self.titleLabel.text = title1
-        self.dateLabel.text = date1
-        self.contentLabel.text = content1
+        self.titleLabel.text = dream?.title
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        self.dateLabel.text = dateFormatter.string(from: (dream?.createdAt)!)
+        self.contentLabel.text = dream?.content
+        
+        print("T: \(titleLabel.text)")
+        print("D: \(dateLabel.text)")
+        print("C: \(contentLabel.text)")
     }
     
 

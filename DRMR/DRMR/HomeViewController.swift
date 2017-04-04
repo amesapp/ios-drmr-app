@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
     // Properties
     // =========================================================================
     var dreams = [Dream]()
+//    var isData = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class HomeViewController: UIViewController {
         // set tableview delegate and datasource
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 250
         
         // Dream.loadUserDreams { (dreams: [PFObject]?, error: Error?) in
         //     // if there is no error
@@ -95,20 +97,15 @@ class HomeViewController: UIViewController {
                             print("TITLE: \(title)")
                         }
                         print("DREAM: \(content)")
-                        
-                        // let toAdd = Dream.init(withContent: dream["content"] as! String,
-                        //                    title: dream["title"] as! String?,
-                        //                    createdAt: dream["createdAt"] as! Date)
-                        // print(toAdd)
-                        
-                        // reload tableView
                         self.tableView.reloadData()
                     }
                     
                 }
             } else {
                 // log the details of the failure
-                print("ERROR: \(error?.localizedDescription)")
+                if let error = error {
+                    print(error.localizedDescription)
+                }
             }
         }
     }
@@ -117,7 +114,6 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     // =========================================================================
     // Actions
@@ -147,6 +143,35 @@ class HomeViewController: UIViewController {
     // Other Methods
     // =========================================================================
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "viewDreamSegue"{
+            
+            print("=================DO WE GET HERE ==================")
+            
+            
+            let vc = segue.destination as! ViewDreamViewController
+            // GET THE CELL INDEX PATH
+            if let cellIndex = tableView.indexPathForSelectedRow?.row{
+                vc.dream = dreams[cellIndex]
+            }
+            else{
+                print("There was no dream in the selected row")
+            }
+            
+            
+//            vc.title1 = titleLabel.text
+//            vc.content1 = previewLabel.text
+//            
+
+            
+        }
+        
+        
+    }
+    
+    
 }
 
 // =============================================================================
@@ -177,9 +202,20 @@ extension HomeViewController: UITableViewDataSource {
         cell.titleLabel.text = dream.title
         cell.previewLabel.text = dream.content
         
-        cell.fullDate = dream.createdAt
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return UITableViewAutomaticDimension
+        
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return UITableViewAutomaticDimension
+        
     }
     
 }

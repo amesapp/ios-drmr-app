@@ -115,16 +115,6 @@ class HomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     // =========================================================================
     // Actions
     // =========================================================================
@@ -153,6 +143,35 @@ class HomeViewController: UIViewController {
     // Other Methods
     // =========================================================================
 
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "viewDreamSegue"{
+            
+            print("=================DO WE GET HERE ==================")
+            
+            
+            let vc = segue.destination as! ViewDreamViewController
+            // GET THE CELL INDEX PATH
+            if let cellIndex = tableView.indexPathForSelectedRow?.row{
+                vc.dream = dreams[cellIndex]
+            }
+            else{
+                print("There was no dream in the selected row")
+            }
+            
+            
+//            vc.title1 = titleLabel.text
+//            vc.content1 = previewLabel.text
+//            
+
+            
+        }
+        
+        
+    }
+    
+    
 }
 
 // =============================================================================
@@ -183,9 +202,12 @@ extension HomeViewController: UITableViewDataSource {
         cell.titleLabel.text = dream.title
         cell.previewLabel.text = dream.content
         
+<<<<<<< HEAD
         cell.dayLabel.text = dream.weekday
         cell.dateLabel.text = dream.date
         cell.monthLabel.text = dream.month
+=======
+>>>>>>> 07850f4ce21f1bc725ea5a3a52627d7879b0b137
         
         return cell
     }

@@ -10,9 +10,25 @@ import UIKit
 
 class ViewDreamViewController: UIViewController {
 
+    // =========================================================================
+    // Outlets
+    // =========================================================================
+
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var contentLabel: UILabel!
+    
+
+    var dream: Dream?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setOutlets()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +37,18 @@ class ViewDreamViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setOutlets(){
+        
+        self.titleLabel.text = dream?.title
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        self.dateLabel.text = dateFormatter.string(from: (dream?.createdAt)!)
+        self.contentLabel.text = dream?.content
+        
+        print("T: \(titleLabel.text)")
+        print("D: \(dateLabel.text)")
+        print("C: \(contentLabel.text)")
     }
-    */
+    
 
 }

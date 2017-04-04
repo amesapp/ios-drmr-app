@@ -22,6 +22,8 @@ class DreamCell: UITableViewCell {
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var monthLabel: UILabel!
     
+    var fullDate: Date?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -32,5 +34,24 @@ class DreamCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "viewDreamSegue"{
+            print("=================DO WE GET HERE ==================")
+            
+            let vc = segue.destination as! ViewDreamViewController
+            vc.title1 = titleLabel.text
+            vc.content1 = previewLabel.text
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            
+            vc.date1 = dateFormatter.string(from: fullDate!)
+        }
+        
+    }
+    
+    
 }

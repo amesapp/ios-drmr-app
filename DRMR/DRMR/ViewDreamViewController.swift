@@ -10,9 +10,30 @@ import UIKit
 
 class ViewDreamViewController: UIViewController {
 
+    // =========================================================================
+    // Outlets
+    // =========================================================================
+
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var dateLabel: UILabel!
+    
+    @IBOutlet weak var contentLabel: UILabel!
+    
+    // =========================================================================
+    // Variables
+    // =========================================================================
+
+    var title1: String?
+    var date1: String?
+    var content1: String?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        setOutlets()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +42,15 @@ class ViewDreamViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setOutlets(){
+        print("T: \(title1)")
+        print("D: \(date1)")
+        print("C: \(content1)")
+        
+        self.titleLabel.text = title1
+        self.dateLabel.text = date1
+        self.contentLabel.text = content1
     }
-    */
+    
 
 }

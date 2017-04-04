@@ -76,7 +76,10 @@ class LogInViewController: UIViewController {
             } else {
                 
                 // print error to console
-                print("ERROR: \(error?.localizedDescription)")
+                if let error = error {
+                    print(error.localizedDescription)
+                }
+                
                 
             }
         }

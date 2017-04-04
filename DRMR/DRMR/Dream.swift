@@ -23,6 +23,21 @@ class Dream: NSObject {
     // var preview: String
     var isFavorited: Bool = false
     
+    //
+    var month: String
+    var weekday: String
+    var date: Int
+    
+    let months = [
+        "JAN", "FEB", "MAR", "APR", "MAY",
+        "JUN", "JUL", "AUG", "SEP", "OCT",
+        "NOV", "DEC"
+    ]
+    
+    let weekdays = [
+        "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"
+    ]
+    
     // =========================================================================
     // Static Properties
     // =========================================================================
@@ -49,6 +64,20 @@ class Dream: NSObject {
         // set the dreamPreview to be the first 140 chars of a dream
         // let index = content.index(content.startIndex, offsetBy: 140, limitedBy: content.endIndex)
         // self.preview = content.substring(to: index!)
+        
+        let calendar = Calendar(identifier: .gregorian)
+        let month = calendar.component(.month, from: createdAt)
+        let day = calendar.component(.day, from: createdAt)
+        let weekday = calendar.component(.weekday, from: createdAt)
+        
+        self.month = self.months[month - 1]
+        self.date = day
+        self.weekday = self.weekdays[weekday - 1]
+        
+        print("Month: \(self.month)")
+        print("Date: \(day)")
+        print("Weekday: \(self.weekday)")
+        
     }
     
     
@@ -94,4 +123,14 @@ class Dream: NSObject {
         }
         
     }
+}
+
+extension Date {
+    
+    var month: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMM"
+        return dateFormatter.string(from: self)
+    }
+    
 }

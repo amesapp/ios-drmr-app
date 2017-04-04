@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
     // Properties
     // =========================================================================
     var dreams = [Dream]()
+//    var isData = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,7 @@ class HomeViewController: UIViewController {
         // set tableview delegate and datasource
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 250
         
         // Dream.loadUserDreams { (dreams: [PFObject]?, error: Error?) in
         //     // if there is no error
@@ -95,20 +97,15 @@ class HomeViewController: UIViewController {
                             print("TITLE: \(title)")
                         }
                         print("DREAM: \(content)")
-                        
-                        // let toAdd = Dream.init(withContent: dream["content"] as! String,
-                        //                    title: dream["title"] as! String?,
-                        //                    createdAt: dream["createdAt"] as! Date)
-                        // print(toAdd)
-                        
-                        // reload tableView
                         self.tableView.reloadData()
                     }
                     
                 }
             } else {
                 // log the details of the failure
-                print("ERROR: \(error?.localizedDescription)")
+                if let error = error {
+                    print(error.localizedDescription)
+                }
             }
         }
     }
@@ -117,7 +114,6 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -188,6 +184,18 @@ extension HomeViewController: UITableViewDataSource {
         cell.previewLabel.text = dream.content
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return UITableViewAutomaticDimension
+        
+    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return UITableViewAutomaticDimension
+        
     }
     
 }

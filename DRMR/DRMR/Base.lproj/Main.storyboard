@@ -146,7 +146,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THU" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahe-CF-ag9">
-                                                    <rect key="frame" x="321.5" y="35" width="29.5" height="17"/>
+                                                    <rect key="frame" x="321.5" y="40" width="29.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -158,20 +158,20 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3A-Pd-Fqm">
-                                                    <rect key="frame" x="321" y="124" width="30.5" height="17"/>
+                                                    <rect key="frame" x="321" y="119" width="30.5" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GW9-Z4-BX4">
-                                                    <rect key="frame" x="8" y="45" width="281" height="22"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GW9-Z4-BX4">
+                                                    <rect key="frame" x="8" y="45" width="278.5" height="54.5"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oo8-b0-tO1">
-                                                    <rect key="frame" x="8" y="83" width="44" height="44"/>
+                                                    <rect key="frame" x="8" y="115.5" width="44" height="44"/>
                                                     <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="44" id="m1J-v4-Qv1"/>
@@ -179,7 +179,7 @@
                                                     </constraints>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqk-CD-Jbh">
-                                                    <rect key="frame" x="68" y="83" width="44" height="44"/>
+                                                    <rect key="frame" x="68" y="115.5" width="44" height="44"/>
                                                     <color key="backgroundColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="44" id="MFm-ON-ovc"/>
@@ -198,12 +198,12 @@
                                                 <constraint firstItem="GW9-Z4-BX4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="OFu-yH-urx" secondAttribute="topMargin" constant="8" id="IEi-JS-Pnn"/>
                                                 <constraint firstItem="Xpa-Ii-fO5" firstAttribute="leading" secondItem="OFu-yH-urx" secondAttribute="leading" constant="8" id="Pww-sS-TuB"/>
                                                 <constraint firstItem="oo8-b0-tO1" firstAttribute="leading" secondItem="OFu-yH-urx" secondAttribute="leading" constant="8" id="S1S-sv-Nzy"/>
-                                                <constraint firstItem="x3A-Pd-Fqm" firstAttribute="top" secondItem="vWF-2N-uQv" secondAttribute="bottom" id="SEi-Vp-LKk"/>
+                                                <constraint firstItem="x3A-Pd-Fqm" firstAttribute="top" secondItem="vWF-2N-uQv" secondAttribute="bottom" constant="-5" id="SEi-Vp-LKk"/>
                                                 <constraint firstItem="ahe-CF-ag9" firstAttribute="leading" secondItem="Xpa-Ii-fO5" secondAttribute="trailing" constant="16" id="Tkp-QJ-ezN"/>
                                                 <constraint firstItem="ahe-CF-ag9" firstAttribute="centerX" secondItem="vWF-2N-uQv" secondAttribute="centerX" id="m7D-5T-0vg"/>
                                                 <constraint firstItem="GW9-Z4-BX4" firstAttribute="leading" secondItem="OFu-yH-urx" secondAttribute="leading" constant="8" id="qSe-FJ-M8S"/>
                                                 <constraint firstItem="Qqk-CD-Jbh" firstAttribute="leading" secondItem="oo8-b0-tO1" secondAttribute="trailing" constant="16" id="qg4-i4-wNd"/>
-                                                <constraint firstItem="vWF-2N-uQv" firstAttribute="top" secondItem="ahe-CF-ag9" secondAttribute="bottom" id="rBh-Sa-Y7L"/>
+                                                <constraint firstItem="vWF-2N-uQv" firstAttribute="top" secondItem="ahe-CF-ag9" secondAttribute="bottom" constant="-5" id="rBh-Sa-Y7L"/>
                                                 <constraint firstItem="oo8-b0-tO1" firstAttribute="top" secondItem="GW9-Z4-BX4" secondAttribute="bottom" constant="16" id="x0B-zu-Rie"/>
                                                 <constraint firstItem="GW9-Z4-BX4" firstAttribute="top" secondItem="Xpa-Ii-fO5" secondAttribute="bottom" constant="8" id="yEg-tB-nSk"/>
                                             </constraints>

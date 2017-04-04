@@ -183,6 +183,10 @@ extension HomeViewController: UITableViewDataSource {
         cell.titleLabel.text = dream.title
         cell.previewLabel.text = dream.content
         
+        cell.dayLabel.text = dream.weekday
+        cell.dateLabel.text = dream.date
+        cell.monthLabel.text = dream.month
+        
         return cell
     }
     

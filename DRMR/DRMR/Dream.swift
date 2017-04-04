@@ -26,7 +26,7 @@ class Dream: NSObject {
     //
     var month: String
     var weekday: String
-    var date: Int
+    var date: String
     
     let months = [
         "JAN", "FEB", "MAR", "APR", "MAY",
@@ -71,7 +71,7 @@ class Dream: NSObject {
         let weekday = calendar.component(.weekday, from: createdAt)
         
         self.month = self.months[month - 1]
-        self.date = day
+        self.date = String(day)
         self.weekday = self.weekdays[weekday - 1]
         
         print("Month: \(self.month)")

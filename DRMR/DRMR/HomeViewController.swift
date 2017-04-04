@@ -198,7 +198,7 @@ extension HomeViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DreamCell", for: indexPath) as! DreamCell
 
         let dream = dreams[indexPath.row]
-        
+
         cell.titleLabel.text = dream.title
         cell.previewLabel.text = dream.content
 

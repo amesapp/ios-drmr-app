@@ -14,11 +14,8 @@ class AddDreamViewController: UIViewController, DateSentDelegate {
     // =========================================================================
     // Outlets
     // =========================================================================
-    
     @IBOutlet weak var titleLabel: UITextField!
-    
     @IBOutlet weak var bodyLabel: UITextView!
-    
     @IBOutlet weak var dateButton: UIButton!
     
     // =========================================================================

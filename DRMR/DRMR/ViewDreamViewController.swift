@@ -13,16 +13,14 @@ class ViewDreamViewController: UIViewController {
     // =========================================================================
     // Outlets
     // =========================================================================
-
     @IBOutlet weak var titleLabel: UILabel!
-    
     @IBOutlet weak var dateLabel: UILabel!
-    
     @IBOutlet weak var contentLabel: UILabel!
     
-
+    // =========================================================================
+    // Properties
+    // =========================================================================
     var dream: Dream?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

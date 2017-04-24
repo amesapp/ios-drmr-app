@@ -20,11 +20,10 @@ class DatePickerViewController: UIViewController {
     // =========================================================================
     
     @IBOutlet weak var popUpView: UIView!
-    
     @IBOutlet weak var dateSelected: UIDatePicker!
     
     // =========================================================================
-    // variables
+    // Properties
     // =========================================================================
     
     var delegate: DateSentDelegate?

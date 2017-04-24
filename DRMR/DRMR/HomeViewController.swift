@@ -142,8 +142,6 @@ class HomeViewController: UIViewController {
     // =========================================================================
     // Other Methods
     // =========================================================================
-
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         if segue.identifier == "viewDreamSegue"{

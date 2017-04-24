@@ -42,6 +42,7 @@ class AddDreamViewController: UIViewController, DateSentDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    
     func setDefaultDate(){
         
         if dreamDate == nil{
@@ -72,12 +73,19 @@ class AddDreamViewController: UIViewController, DateSentDelegate {
     
     @IBAction func onSaveButton(_ sender: UIBarButtonItem) {
         
+        print("DATE ON CLICK SAVE: \(dreamDate!)")
+        
+        
         // if the user presses on the save button, create a new dream object
         if let content = bodyLabel.text {
             let myDream = Dream(withContent: content, title: titleLabel.text, createdAt: dreamDate!)
             
             // save the dream to our dreams list
             // delegate?.didCreateDream(dream: myDream)
+            
+            print("DATE ON CLICK SAVE INSIDE CREATED AT: \(dreamDate!)")
+
+            
             
             Dream.postUserDream(myDream, withCompletion: { (success: Bool, error: Error?) in
                 
@@ -102,7 +110,13 @@ class AddDreamViewController: UIViewController, DateSentDelegate {
     
     func userDidEnterDate(data: Date){
         self.dreamDate = data
-        self.setDefaultDate()
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        
+        dateButton.setTitle("\(dateFormatter.string(from: dreamDate!))", for: .normal)
+        print("\(dateFormatter.string(from: dreamDate!))")
+        
         print("Dream Date Changed!")
     }
 

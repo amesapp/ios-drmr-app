@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -70,24 +70,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
-        </scene>
-        <!--Edit Dream View Controller-->
-        <scene sceneID="fB2-oz-Q1M">
-            <objects>
-                <viewController id="WKX-CZ-B1i" customClass="EditDreamViewController" customModule="DRMR" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VUM-T8-VcL"/>
-                        <viewControllerLayoutGuide type="bottom" id="jib-2g-IpT"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QXa-u3-aAr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r70-8m-d4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3878" y="-666"/>
         </scene>
         <!--View Dream-->
         <scene sceneID="fJ6-sz-ja7">
@@ -165,7 +147,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="2I1-qM-NCh"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="Jm0-Al-1c6">
                             <connections>
-                                <segue destination="WKX-CZ-B1i" kind="show" identifier="editDreamSegue" id="6kp-4y-0vK"/>
+                                <segue destination="Paw-yf-8Dq" kind="show" identifier="editDream" id="9GX-Q9-0Yf"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -178,6 +160,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLd-UI-GCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2856.8000000000002" y="-665.21739130434787"/>
+        </scene>
+        <!--Edit Dream-->
+        <scene sceneID="OhM-2P-kQB">
+            <objects>
+                <viewController id="Paw-yf-8Dq" customClass="EditDreamViewController" customModule="DRMR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RDx-yZ-lfK"/>
+                        <viewControllerLayoutGuide type="bottom" id="AW4-Gq-vvZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6qA-MU-YC6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mDV-tT-kGp">
+                                <rect key="frame" x="16" y="88" width="343" height="29"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nzi-lb-aNl">
+                                <rect key="frame" x="8" y="177" width="359" height="490"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJH-sv-CGE">
+                                <rect key="frame" x="16" y="125" width="168" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="date">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mJH-sv-CGE" firstAttribute="top" secondItem="mDV-tT-kGp" secondAttribute="bottom" constant="8" id="SnP-nQ-J0G"/>
+                            <constraint firstItem="nzi-lb-aNl" firstAttribute="top" secondItem="mJH-sv-CGE" secondAttribute="bottom" constant="10" id="roW-yY-EQJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Edit Dream" id="Dhe-dW-mXt">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="bsA-Uo-hgK"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="GYj-Bi-suS"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDL-YJ-lKa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3729" y="-665"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="1qe-80-7Rq">
@@ -200,7 +230,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="176"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Whj-ha-aAH" id="OFu-yH-urx">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="175.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="176"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xpa-Ii-fO5">

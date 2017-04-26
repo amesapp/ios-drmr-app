@@ -46,14 +46,17 @@ class Dream: NSObject {
     // =========================================================================
     // Constructor
     // =========================================================================
-    init(withContent content: String, title: String?, createdAt: Date) {
+    init(withContent content: String, title: String?, createdDate: Date) {
         
         // set the dream id
         // self.id = Dream.currentID
         // Dream.currentID += 1
         
         // set the dream's date
-        self.createdAt = createdAt
+        self.createdAt = createdDate
+        
+        print ("DATE FROM CONSTRUCTOR: \(createdDate)")
+        print ("DATE FROM CONSTRUCTOR: \(self.createdAt)")
         
         // set the title if there is one
         self.title = title ?? ""
@@ -98,7 +101,16 @@ class Dream: NSObject {
         
         // add relevant fields to the object
         // parseDream["id"] = dream.id
-        parseDream["createdAt"] = dream.createdAt
+        
+        
+        
+        
+        // NOTE ! PARSE IS THE PROBLEM! CHANGE THE NAME 'CREATEDAT' ON PARSE OR SAVE IT AS A STRING
+        
+        
+        
+        print ("\n\nDATE FROM postUserDream\(dream.createdAt)\n\n")
+        parseDream["dreamDate"] = dream.createdAt
         parseDream["title"] = dream.title
         parseDream["content"] = dream.content
         // parseDream["preview"] = dream.preview

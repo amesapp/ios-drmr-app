@@ -77,11 +77,11 @@ class HomeViewController: UIViewController {
                         print(1)
                         let title = dream["title"] as! String?
                         print(2)
-                        let timestamp = dream.createdAt!
+                        let timestamp = dream["dreamDate"] as! Date
 
                         let myDream = Dream(withContent: content,
                               title: title,
-                              createdAt: timestamp)
+                              createdDate: timestamp)
 
                         self.dreams.append(myDream)
 

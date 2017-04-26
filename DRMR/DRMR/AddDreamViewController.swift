@@ -50,7 +50,7 @@ class AddDreamViewController: UIViewController, DateSentDelegate {
         dateFormatter.dateFormat = "yyyy-MM-dd"
 
         dateButton.setTitle("\(dateFormatter.string(from: dreamDate!))", for: .normal)
-        print("\(dateFormatter.string(from: dreamDate!))")
+        print("From Default: \(dateFormatter.string(from: dreamDate!))")
         
     }
     
@@ -75,12 +75,13 @@ class AddDreamViewController: UIViewController, DateSentDelegate {
         
         // if the user presses on the save button, create a new dream object
         if let content = bodyLabel.text {
-            let myDream = Dream(withContent: content, title: titleLabel.text, createdAt: dreamDate!)
+            let myDream = Dream(withContent: content, title: titleLabel.text, createdDate: dreamDate!)
             
             // save the dream to our dreams list
             // delegate?.didCreateDream(dream: myDream)
             
             print("DATE ON CLICK SAVE INSIDE CREATED AT: \(dreamDate!)")
+            print("\nMY DREAM ON SAVE \(myDream.title) - \(myDream.date)\n")
 
             
             
@@ -88,6 +89,7 @@ class AddDreamViewController: UIViewController, DateSentDelegate {
                 
                 if success {
                     print("SUCCESS: Dream was Posted!")
+                    print("\nThis dream was posted\(myDream.title) - \(myDream.date)\n")
                 } else {
                     print(error!.localizedDescription)
                 }

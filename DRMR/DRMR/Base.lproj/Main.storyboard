@@ -126,9 +126,17 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcY-xJ-vCQ">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem title="Favorite" id="ukm-ME-IrY"/>
+                                    <barButtonItem title="Favorite" id="ukm-ME-IrY">
+                                        <connections>
+                                            <action selector="onFavorite:" destination="1c2-zm-zqB" id="lYY-cr-0PH"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="0Sg-Jc-Dg1"/>
-                                    <barButtonItem systemItem="action" id="bpT-0K-AGE"/>
+                                    <barButtonItem systemItem="action" id="bpT-0K-AGE">
+                                        <connections>
+                                            <action selector="onShare:" destination="1c2-zm-zqB" id="xnu-Y4-xek"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>

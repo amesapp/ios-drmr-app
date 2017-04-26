@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -102,12 +102,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gU0-RQ-OAW">
-                                <rect key="frame" x="0.0" y="154" width="375" height="513"/>
+                                <rect key="frame" x="0.0" y="154" width="375" height="469"/>
                                 <color key="backgroundColor" red="0.69803921568627447" green="0.59607843137254901" blue="0.81176470588235294" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="513" id="bBf-zH-l4v"/>
-                                    <constraint firstAttribute="width" constant="375" id="xRu-tD-BKW"/>
-                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placeholder" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C7c-eq-tER">
                                 <rect key="frame" x="16" y="164" width="343" height="22"/>
@@ -122,26 +118,47 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fW7-Kn-EF8">
-                                <rect key="frame" x="34" y="116" width="42" height="24"/>
+                                <rect key="frame" x="16" y="116" width="42" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcY-xJ-vCQ">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="Favorite" id="ukm-ME-IrY">
+                                        <connections>
+                                            <action selector="onFavorite:" destination="1c2-zm-zqB" id="lYY-cr-0PH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="flexibleSpace" id="0Sg-Jc-Dg1"/>
+                                    <barButtonItem systemItem="action" id="bpT-0K-AGE">
+                                        <connections>
+                                            <action selector="onShare:" destination="1c2-zm-zqB" id="xnu-Y4-xek"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lcY-xJ-vCQ" firstAttribute="top" secondItem="gU0-RQ-OAW" secondAttribute="bottom" id="20Y-h3-oi8"/>
                             <constraint firstItem="C7c-eq-tER" firstAttribute="top" secondItem="fW7-Kn-EF8" secondAttribute="bottom" constant="24" id="6Hr-sD-jSE"/>
-                            <constraint firstItem="fW7-Kn-EF8" firstAttribute="leading" secondItem="jvJ-Hk-G5T" secondAttribute="leading" constant="34" id="JdM-kL-mnL"/>
+                            <constraint firstItem="lcY-xJ-vCQ" firstAttribute="leading" secondItem="jvJ-Hk-G5T" secondAttribute="leading" id="OXs-bS-xd7"/>
                             <constraint firstItem="ghe-jy-Ida" firstAttribute="leading" secondItem="jvJ-Hk-G5T" secondAttribute="leading" constant="16" id="PaG-VY-V0H"/>
                             <constraint firstAttribute="trailing" secondItem="C7c-eq-tER" secondAttribute="trailing" constant="16" id="QKW-hV-P4f"/>
+                            <constraint firstItem="fW7-Kn-EF8" firstAttribute="leading" secondItem="ghe-jy-Ida" secondAttribute="leading" id="Yq3-GN-hD0"/>
                             <constraint firstItem="gU0-RQ-OAW" firstAttribute="top" secondItem="fW7-Kn-EF8" secondAttribute="bottom" constant="14" id="dyD-GX-8wF"/>
                             <constraint firstItem="C7c-eq-tER" firstAttribute="leading" secondItem="jvJ-Hk-G5T" secondAttribute="leading" constant="16" id="f3q-UR-203"/>
-                            <constraint firstItem="Bje-UR-ckT" firstAttribute="top" secondItem="gU0-RQ-OAW" secondAttribute="bottom" id="fqu-Eh-Ljd"/>
+                            <constraint firstItem="gU0-RQ-OAW" firstAttribute="leading" secondItem="jvJ-Hk-G5T" secondAttribute="leading" id="hoM-G5-mPo"/>
                             <constraint firstItem="gU0-RQ-OAW" firstAttribute="leading" secondItem="jvJ-Hk-G5T" secondAttribute="leading" id="pXy-eW-q1s"/>
+                            <constraint firstAttribute="trailing" secondItem="lcY-xJ-vCQ" secondAttribute="trailing" id="qBi-sZ-3hE"/>
                             <constraint firstItem="fW7-Kn-EF8" firstAttribute="top" secondItem="ghe-jy-Ida" secondAttribute="bottom" constant="8" id="rMF-L9-32K"/>
                             <constraint firstAttribute="trailing" secondItem="gU0-RQ-OAW" secondAttribute="trailing" id="tZ4-9m-jxC"/>
                             <constraint firstItem="ghe-jy-Ida" firstAttribute="top" secondItem="SmT-7f-oyS" secondAttribute="bottom" constant="8" id="xZJ-gk-fwb"/>
                             <constraint firstItem="fW7-Kn-EF8" firstAttribute="top" secondItem="ghe-jy-Ida" secondAttribute="bottom" constant="8" id="yBx-9A-6sf"/>
+                            <constraint firstAttribute="trailing" secondItem="gU0-RQ-OAW" secondAttribute="trailing" id="zFQ-D4-0Tn"/>
+                            <constraint firstItem="Bje-UR-ckT" firstAttribute="top" secondItem="lcY-xJ-vCQ" secondAttribute="bottom" id="zTt-Tt-l0l"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="View Dream" id="Oxn-sO-p9l">
@@ -160,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLd-UI-GCr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2857" y="-665"/>
+            <point key="canvasLocation" x="2856.8000000000002" y="-665.21739130434787"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="1qe-80-7Rq">

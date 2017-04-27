@@ -47,12 +47,32 @@ class ViewDreamViewController: UIViewController {
         print("D: \(dateLabel.text!)")
         print("C: \(contentLabel.text!)")
     }
+    
+    func updateFavoriteButton() {
+        
+    }
 
     // =========================================================================
     // ACTIONS
     // =========================================================================
     @IBAction func onFavorite(_ sender: UIBarButtonItem) {
-
+        
+        if let dream = dream {
+            // if already favorited, unfavorite
+            if dream.isFavorited {
+                dream.isFavorited = false
+                // update icon
+                // updateIcon()
+                sender.title = "Favorite"
+            } else {
+                // otherwise... favorite
+                dream.isFavorited = true
+                // update icon
+                // updateIcon()
+                sender.title = "Unfavorite"
+            }
+        }
+        
     }
 
     @IBAction func onShare(_ sender: UIBarButtonItem) {

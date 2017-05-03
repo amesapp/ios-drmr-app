@@ -24,6 +24,21 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Raleway regular.ttf</string>
+		<string>Raleway italic.ttf</string>
+		<string>Raleway 500.ttf</string>
+		<string>Raleway 500italic.ttf</string>
+		<string>Montserrat regular.ttf</string>
+		<string>Montserrat italic.ttf</string>
+		<string>Montserrat 500.ttf</string>
+		<string>Montserrat 500italic.ttf</string>
+		<string>Roboto regular.ttf</string>
+		<string>Roboto italic.ttf</string>
+		<string>Roboto 500.ttf</string>
+		<string>Roboto 500italic.ttf</string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

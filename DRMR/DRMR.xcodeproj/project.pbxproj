@@ -15,6 +15,18 @@
 		546842381E7A0100008DE8D3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546842371E7A0100008DE8D3 /* HomeViewController.swift */; };
 		547889B21E8099B600BA0AD2 /* DreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547889B11E8099B600BA0AD2 /* DreamCell.swift */; };
 		547889B41E809E2200BA0AD2 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 547889B31E809E2200BA0AD2 /* Dream.swift */; };
+		54A31FBC1EBA6C8C00F830AB /* Montserrat italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FBA1EBA6C8C00F830AB /* Montserrat italic.ttf */; };
+		54A31FBD1EBA6C8C00F830AB /* Montserrat regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FBB1EBA6C8C00F830AB /* Montserrat regular.ttf */; };
+		54A31FC01EBA6CA000F830AB /* Raleway italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FBE1EBA6CA000F830AB /* Raleway italic.ttf */; };
+		54A31FC11EBA6CA000F830AB /* Raleway regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FBF1EBA6CA000F830AB /* Raleway regular.ttf */; };
+		54A31FDC1EBA72C300F830AB /* Roboto italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FCE1EBA72C300F830AB /* Roboto italic.ttf */; };
+		54A31FDD1EBA72C300F830AB /* Roboto regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FCF1EBA72C300F830AB /* Roboto regular.ttf */; };
+		54A31FE41EBA739300F830AB /* Montserrat 500.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FDE1EBA739300F830AB /* Montserrat 500.ttf */; };
+		54A31FE51EBA739300F830AB /* Montserrat 500italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FDF1EBA739300F830AB /* Montserrat 500italic.ttf */; };
+		54A31FE61EBA739300F830AB /* Raleway 500.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FE01EBA739300F830AB /* Raleway 500.ttf */; };
+		54A31FE71EBA739300F830AB /* Raleway 500italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FE11EBA739300F830AB /* Raleway 500italic.ttf */; };
+		54A31FE81EBA739300F830AB /* Roboto 500.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FE21EBA739300F830AB /* Roboto 500.ttf */; };
+		54A31FE91EBA739300F830AB /* Roboto 500italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 54A31FE31EBA739300F830AB /* Roboto 500italic.ttf */; };
 		6DF7E6628D4D8C120F15570F /* Pods_DRMR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8EF117DEB7B898C5EAD761B /* Pods_DRMR.framework */; };
 		C617AB511E8B2070002BF370 /* EditDreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C617AB501E8B2070002BF370 /* EditDreamViewController.swift */; };
 		C624A60E1E8C707B00AB2913 /* ViewDreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C624A60D1E8C707B00AB2913 /* ViewDreamViewController.swift */; };
@@ -33,6 +45,18 @@
 		546842371E7A0100008DE8D3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		547889B11E8099B600BA0AD2 /* DreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamCell.swift; sourceTree = "<group>"; };
 		547889B31E809E2200BA0AD2 /* Dream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
+		54A31FBA1EBA6C8C00F830AB /* Montserrat italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat italic.ttf"; sourceTree = "<group>"; };
+		54A31FBB1EBA6C8C00F830AB /* Montserrat regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat regular.ttf"; sourceTree = "<group>"; };
+		54A31FBE1EBA6CA000F830AB /* Raleway italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway italic.ttf"; sourceTree = "<group>"; };
+		54A31FBF1EBA6CA000F830AB /* Raleway regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway regular.ttf"; sourceTree = "<group>"; };
+		54A31FCE1EBA72C300F830AB /* Roboto italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto italic.ttf"; sourceTree = "<group>"; };
+		54A31FCF1EBA72C300F830AB /* Roboto regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto regular.ttf"; sourceTree = "<group>"; };
+		54A31FDE1EBA739300F830AB /* Montserrat 500.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat 500.ttf"; sourceTree = "<group>"; };
+		54A31FDF1EBA739300F830AB /* Montserrat 500italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat 500italic.ttf"; sourceTree = "<group>"; };
+		54A31FE01EBA739300F830AB /* Raleway 500.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway 500.ttf"; sourceTree = "<group>"; };
+		54A31FE11EBA739300F830AB /* Raleway 500italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway 500italic.ttf"; sourceTree = "<group>"; };
+		54A31FE21EBA739300F830AB /* Roboto 500.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto 500.ttf"; sourceTree = "<group>"; };
+		54A31FE31EBA739300F830AB /* Roboto 500italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto 500italic.ttf"; sourceTree = "<group>"; };
 		BDBDAAD474A371C2034D128B /* Pods-DRMR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRMR.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRMR/Pods-DRMR.release.xcconfig"; sourceTree = "<group>"; };
 		C617AB501E8B2070002BF370 /* EditDreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditDreamViewController.swift; sourceTree = "<group>"; };
 		C624A60D1E8C707B00AB2913 /* ViewDreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDreamViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +99,7 @@
 		5468421F1E79FA28008DE8D3 /* DRMR */ = {
 			isa = PBXGroup;
 			children = (
+				54A31FB91EBA6C6200F830AB /* Fonts */,
 				546842201E79FA28008DE8D3 /* AppDelegate.swift */,
 				546842321E79FFE6008DE8D3 /* View Controllers */,
 				546842331E79FFF4008DE8D3 /* Models */,
@@ -106,6 +131,25 @@
 				547889B31E809E2200BA0AD2 /* Dream.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		54A31FB91EBA6C6200F830AB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				54A31FDE1EBA739300F830AB /* Montserrat 500.ttf */,
+				54A31FDF1EBA739300F830AB /* Montserrat 500italic.ttf */,
+				54A31FE01EBA739300F830AB /* Raleway 500.ttf */,
+				54A31FE11EBA739300F830AB /* Raleway 500italic.ttf */,
+				54A31FE21EBA739300F830AB /* Roboto 500.ttf */,
+				54A31FE31EBA739300F830AB /* Roboto 500italic.ttf */,
+				54A31FCE1EBA72C300F830AB /* Roboto italic.ttf */,
+				54A31FCF1EBA72C300F830AB /* Roboto regular.ttf */,
+				54A31FBA1EBA6C8C00F830AB /* Montserrat italic.ttf */,
+				54A31FBB1EBA6C8C00F830AB /* Montserrat regular.ttf */,
+				54A31FBE1EBA6CA000F830AB /* Raleway italic.ttf */,
+				54A31FBF1EBA6CA000F830AB /* Raleway regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 		B60B03DE2E768DDC37C9F838 /* Frameworks */ = {
@@ -188,9 +232,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54A31FC11EBA6CA000F830AB /* Raleway regular.ttf in Resources */,
+				54A31FE71EBA739300F830AB /* Raleway 500italic.ttf in Resources */,
+				54A31FDC1EBA72C300F830AB /* Roboto italic.ttf in Resources */,
 				5468422B1E79FA28008DE8D3 /* LaunchScreen.storyboard in Resources */,
 				546842281E79FA28008DE8D3 /* Assets.xcassets in Resources */,
+				54A31FBC1EBA6C8C00F830AB /* Montserrat italic.ttf in Resources */,
+				54A31FE61EBA739300F830AB /* Raleway 500.ttf in Resources */,
+				54A31FE51EBA739300F830AB /* Montserrat 500italic.ttf in Resources */,
+				54A31FC01EBA6CA000F830AB /* Raleway italic.ttf in Resources */,
+				54A31FE41EBA739300F830AB /* Montserrat 500.ttf in Resources */,
 				546842261E79FA28008DE8D3 /* Main.storyboard in Resources */,
+				54A31FBD1EBA6C8C00F830AB /* Montserrat regular.ttf in Resources */,
+				54A31FE91EBA739300F830AB /* Roboto 500italic.ttf in Resources */,
+				54A31FE81EBA739300F830AB /* Roboto 500.ttf in Resources */,
+				54A31FDD1EBA72C300F830AB /* Roboto regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
